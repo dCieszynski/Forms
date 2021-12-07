@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 2 - Formularze</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 class="header">Zadanie 2 - Formularze</h1>
+        <div class="container">
+            <h2 class="header header--form">Dodaj książkę</h2>
+            <form action="" class="form">
+                <div class="form__container">
+                    <div class="form__input">
+                        <label for="book-title">Tytuł książki: </label>
+                        <input type="text" name="book-title" id="book-title" placeholder="Tytuł książki">
+                    </div>
+                    <div id="book-title-error" class="form__error"></div>
+                </div>
+                <div class="form__container">
+                    <div class="form__input">
+                        <label for="book-author">Autor książki: </label>
+                        <input type="text" name="book-author" id="book-author" placeholder="Autor książki">
+                    </div>
+                    <div id="book-author-error" class="form__error"></div>
+                </div>
+                <div class="form__container">
+                    <div class="form__input">
+                        <label for="book-priority">Priorytet: </label>
+                        <select name="book-priority" id="book-priority">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="form__error"></div>
+                </div>
+                <div class="form__container">
+                    <div class="form__input">
+                        <label for="book-category">Kategoria książki: </label>
+                        <input type="text" name="book-category" id="book-category" list="book-category-list">
+                        <datalist id="book-category-list">
+                            <option value="Kategoria 1"></option>
+                            <option value="Kategoria 2"></option>
+                            <option value="Kategoria 3"></option>
+                        </datalist>
+                    </div>
+                    <div id="book-category-error" class="form__error"></div>
+                </div>
+                <button id="btn-submit" class="form__button">Dodaj książkę</button>
+            </form>
+        </div>
+        <div class="container container--table">
+            <h2 class="header header--books">Książki</h2>
+            <table class="table-books">
+                <tr>
+                    <th>Tytuł ksiązki</th>
+                    <th>Autor książki</th>
+                    <th>Priorytet</th>
+                    <th>Kategoria</th>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
