@@ -1,2 +1,2 @@
 # Forms
-## [Strona na GithubPages](https://dcieszynski.github.io/Zad2/)
+## [Strona na GithubPages](https://dcieszynski.github.io/Forms/)
